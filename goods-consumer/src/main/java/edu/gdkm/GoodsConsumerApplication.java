@@ -3,12 +3,17 @@ package edu.gdkm;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.cloud.netflix.eureka.EnableEurekaClient;
+import org.springframework.cloud.netflix.hystrix.EnableHystrix;
+import org.springframework.cloud.openfeign.EnableFeignClients;
 
 @SpringBootApplication
 @EnableEurekaClient
-public class GoodsProviderApplication {
+@EnableFeignClients
+@EnableHystrix
+public class GoodsConsumerApplication {
+
     public static void main(String[] args) {
-        SpringApplication.run(GoodsProviderApplication.class, args);
+        SpringApplication.run(GoodsConsumerApplication.class, args);
     }
 
 }

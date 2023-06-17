@@ -45,7 +45,8 @@ public class UserController {
                 //将登录者信息存入session
                 session.setAttribute("user",userService.login(uname));
                 System.out.print("登录成功");
-                return "login";
+                return "redirect:http://localhost:8896/goods/getAll?uaccount="+userService.login(uname).
+                        getUaccount()+ "&upassword="+userService.login(uname).getUpassword();
             }
         }
         System.out.print("登录失败！");
