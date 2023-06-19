@@ -6,7 +6,7 @@
         select * from goods
     </select>
     <select id="getOnegoods" resultType="edu.gdkm.model.Goods" parameterType="java.lang.String">
-        select * from goods where gname like "%${gid}%"
+        select * from goods where gname like "%${gname}%"
     </select>
     <select id="getOnegid" resultType="edu.gdkm.model.Goods" parameterType="int">
         select * from goods where gid=#{gid}

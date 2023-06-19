@@ -1,6 +1,8 @@
 package edu.gdkm.hystrix;
 
+import edu.gdkm.model.Cart;
 import edu.gdkm.model.Goods;
+import edu.gdkm.model.Userirder;
 import edu.gdkm.service.GoodsService;
 import org.springframework.stereotype.Component;
 
@@ -19,7 +21,11 @@ import java.util.List;
 public class GoodsServiceHystrix implements GoodsService {
     @Override
     public List<Goods> getAllgoods() {
-        System.out.println("getAllgoods");
+        return null;
+    }
+
+    @Override
+    public List<Userirder> getAllorder(int uid) {
         return null;
     }
 
@@ -30,7 +36,31 @@ public class GoodsServiceHystrix implements GoodsService {
 
     @Override
     public Goods getOnegid(int gid) {
-        System.out.println("getOnegid");
         return null;
+    }
+
+    @Override
+    public int updateCart(int number, int id) {
+        return 0;
+    }
+
+    @Override
+    public List<Cart> getAllcart(int uid) {
+        return null;
+    }
+
+    @Override
+    public int intcart(String goodsname, int number, int price, int goodid, int uid) {
+        return 0;
+    }
+
+    @Override
+    public int deleteCart(int id) {
+        return 0;
+    }
+
+    @Override
+    public int insertOrder(String goodsname, int number, int price, int uid) {
+        return 0;
     }
 }

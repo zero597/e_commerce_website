@@ -1,7 +1,5 @@
 package edu.gdkm.model;
 
-import java.util.List;
-
 /**
  * 购物车类
  */
@@ -9,20 +7,11 @@ public class Cart {
     private Integer id;
     private String goodsname;
     private Integer number;
-    private double price;
-    private List<Goods> goodid;
-    private List<User> uid;
+    private int price;
+    private int goodid;
+    private int uid;
 
     public Cart() {
-    }
-
-    public Cart(Integer id, String goodsname, Integer number, double price, List<Goods> goodid, List<User> uid) {
-        this.id = id;
-        this.goodsname = goodsname;
-        this.number = number;
-        this.price = price;
-        this.goodid = goodid;
-        this.uid = uid;
     }
 
     public Integer getId() {
@@ -49,39 +38,28 @@ public class Cart {
         this.number = number;
     }
 
-    public double getPrice() {
+    public int getPrice() {
         return price;
     }
 
-    public void setPrice(double price) {
+    public void setPrice(int price) {
         this.price = price;
     }
 
-    public List<Goods> getGoodid() {
+    public int getGoodid() {
         return goodid;
     }
 
-    public void setGoodid(List<Goods> goodid) {
+    public void setGoodid(int goodid) {
         this.goodid = goodid;
     }
 
-    public List<User> getUid() {
+    public int getUid() {
         return uid;
     }
 
-    public void setUid(List<User> uid) {
+    public void setUid(int uid) {
         this.uid = uid;
     }
 
-    @Override
-    public String toString() {
-        return "Cart{" +
-                "id=" + id +
-                ", goodsname='" + goodsname + '\'' +
-                ", number=" + number +
-                ", price=" + price +
-                ", goodid=" + goodid +
-                ", uid=" + uid +
-                '}';
-    }
 }

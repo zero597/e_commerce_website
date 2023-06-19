@@ -25,7 +25,6 @@ public class GoodsController {
     GoodsDao goodsDao;
     @RequestMapping(value = "/getAllgoods",method = RequestMethod.GET)
     public List<Goods> getAllgoods(){
-        System.out.println("1");
         return goodsDao.getAllgoods();
     }
 

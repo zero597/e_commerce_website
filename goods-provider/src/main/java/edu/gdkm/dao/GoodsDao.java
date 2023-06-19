@@ -23,4 +23,6 @@ public interface GoodsDao {
     List<Goods> getOnegoods(@Param(value = "gname")String gname);
 //    根据id查询单个商品详情
     Goods getOnegid(@Param(value = "gid")int gid);
+
+
 }
