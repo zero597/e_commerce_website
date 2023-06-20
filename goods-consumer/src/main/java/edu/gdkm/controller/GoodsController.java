@@ -60,9 +60,9 @@ public class GoodsController {
                     break;
             }
         }
-        request.setAttribute("goods1",goods1);
+        request.setAttribute("goods1",goods3);
         request.setAttribute("goods2",goods2);
-        request.setAttribute("goods3",goods3);
+        request.setAttribute("goods3",goods1);
         request.setAttribute("goods4",goods4);
         return "index";
     }

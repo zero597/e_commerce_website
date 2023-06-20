@@ -1,6 +1,6 @@
 /*
-SQLyog Ultimate v11.25 (64 bit)
-MySQL - 8.0.13 : Database - b2bdata
+SQLyog Ultimate v12.08 (64 bit)
+MySQL - 8.0.33 : Database - b2bdata
 *********************************************************************
 */
 
@@ -12,7 +12,7 @@ MySQL - 8.0.13 : Database - b2bdata
 /*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 */;
 /*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
 /*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
-CREATE DATABASE /*!32312 IF NOT EXISTS*/`b2bdata` /*!40100 DEFAULT CHARACTER SET utf8 */;
+CREATE DATABASE /*!32312 IF NOT EXISTS*/`b2bdata` /*!40100 DEFAULT CHARACTER SET utf8mb3 */ /*!80016 DEFAULT ENCRYPTION='N' */;
 
 USE `b2bdata`;
 
@@ -21,16 +21,16 @@ USE `b2bdata`;
 DROP TABLE IF EXISTS `user`;
 
 CREATE TABLE `user` (
-  `uaccount` int(11) NOT NULL AUTO_INCREMENT COMMENT '用户账号',
+  `uaccount` int NOT NULL AUTO_INCREMENT COMMENT '用户账号',
   `upassword` varbinary(20) NOT NULL COMMENT '用户密码',
   `uname` varbinary(20) NOT NULL COMMENT '用户姓名',
   `usex` varbinary(10) NOT NULL COMMENT '性别',
   PRIMARY KEY (`uaccount`)
-) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=utf8mb3;
 
 /*Data for the table `user` */
 
-insert  into `user`(`uaccount`,`upassword`,`uname`,`usex`) values (1,'123456','TOM','男');
+insert  into `user`(`uaccount`,`upassword`,`uname`,`usex`) values (1,'123456','TOM','男'),(2,'123','lin','男'),(3,'111','test','男'),(4,'1111','lina','男'),(5,'1111','aaa','男');
 
 /*!40101 SET SQL_MODE=@OLD_SQL_MODE */;
 /*!40014 SET FOREIGN_KEY_CHECKS=@OLD_FOREIGN_KEY_CHECKS */;

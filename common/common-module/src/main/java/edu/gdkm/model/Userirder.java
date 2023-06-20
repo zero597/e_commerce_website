@@ -1,7 +1,7 @@
 package edu.gdkm.model;
 
 import java.text.SimpleDateFormat;
-import java.util.Date;
+import java.time.LocalDateTime;
 
 /**
  * 商品订单类
@@ -12,7 +12,7 @@ public class Userirder {
     private String goodsname;
     private Integer number;
     private Integer price;
-    private Date time; //购买时间
+    private LocalDateTime time; //购买时间
 
     private SimpleDateFormat sp = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
 
@@ -59,18 +59,11 @@ public class Userirder {
         this.price = price;
     }
 
-    public Object getTime() {
-        return sp.format(time);
-
+    public LocalDateTime getTime() {
+        return time;
     }
 
-
-//    public Date getTime() {
-//        return time;
-//    }
-
-    public void setTime(Date time) {
+    public void setTime(LocalDateTime time) {
         this.time = time;
     }
-
 }

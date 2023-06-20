@@ -4,7 +4,7 @@ html{
 body{
     padding: 0;
     margin: 0;
-    background: url(http://localhost:8894/b2b-goods-consumer/templates/img/dengluye.png) no-repeat;
+    background: url(http://localhost:8896/img/dengluye.png) no-repeat;
     background-size: 100% 100%;
     position: relative;
 }

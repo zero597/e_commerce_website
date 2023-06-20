@@ -4,11 +4,11 @@
 <head>
     <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
     <title>美多商城-首页</title>
-    <link rel="stylesheet" type="text/css" href="http://localhost:8894/goods-consumer/templates/css/reset.css">
-    <link rel="stylesheet" type="text/css" href="http://localhost:8894/goods-consumer/templates/css/main.css">
-    <script type="text/javascript" src="http://localhost:8894/goods-consumer/templates/js/jquery-1.12.4.min.js"></script>
-    <script type="text/javascript" src="http://localhost:8894/goods-consumer/templates/js/jquery-ui.min.js"></script>
-    <script type="text/javascript" src="http://localhost:8894/goods-consumer/templates/js/slide.js"></script>
+    <link rel="stylesheet" type="text/css" href="http://localhost:8896/css/reset.css">
+    <link rel="stylesheet" type="text/css" href="http://localhost:8896/css/main.css">
+    <script type="text/javascript" src="http://localhost:8896/js/jquery-1.12.4.min.js"></script>
+    <script type="text/javascript" src="http://localhost:8896/js/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="http://localhost:8896/js/slide.js"></script>
 </head>
 <body>
 <div class="header_con">
@@ -36,7 +36,7 @@
     </div>
 </div>
 <div class="search_bar clearfix">
-    <a th:href="@{'getAll?uaccount='+${session.uaccount}}" class="logo fl"><img src="http://localhost:8894/goods-consumer/templates/img/logo.png"></a>
+    <a th:href="@{'getAll?uaccount='+${session.uaccount}}" class="logo fl"><img src="http://localhost:8896/img/logo.png"></a>
     <div class="search_con fl">
         <form action="/goods/getOne" method="get">
             <input type="text" class="input_text fl" name="name" placeholder="搜索商品">
@@ -65,18 +65,18 @@
     </ul>
     <div class="slide fl">
         <ul class="slide_pics">
-            <li><img src="http://localhost:8894/goods-consumer/templates/img/slide.jpg" alt="幻灯片"></li>
-            <li><img src="http://localhost:8894/goods-consumer/templates/img/slide02.jpg" alt="幻灯片"></li>
-            <li><img src="http://localhost:8894/goods-consumer/templates/img/slide03.jpg" alt="幻灯片"></li>
-            <li><img src="http://localhost:8894/goods-consumer/templates/img/slide04.jpg" alt="幻灯片"></li>
+            <li><img src="http://localhost:8896/img/slide.jpg" alt="幻灯片"></li>
+            <li><img src="http://localhost:8896/img/slide02.jpg" alt="幻灯片"></li>
+            <li><img src="http://localhost:8896/img/slide03.jpg" alt="幻灯片"></li>
+            <li><img src="http://localhost:8896/img/slide04.jpg" alt="幻灯片"></li>
         </ul>
         <div class="prev"></div>
         <div class="next"></div>
         <ul class="points"></ul>
     </div>
     <div class="adv fl">
-        <a href="#"><img src="http://localhost:8894/goods-consumer/templates/img/adv01.jpg"></a>
-        <a href="#"><img src="http://localhost:8894/goods-consumer/templates/img/adv02.jpg"></a>
+        <a href="#"><img src="http://localhost:8896/img/adv01.jpg"></a>
+        <a href="#"><img src="http://localhost:8896/img/adv02.jpg"></a>
     </div>
 </div>
     <div class="list_model">
@@ -90,7 +90,7 @@
             </div>
     </div>
     <div class="goods_con clearfix">
-        <div class="goods_banner fl"><img src="http://localhost:8894/goods-consumer/templates/img/banner06.jpg"></div>
+        <div class="goods_banner fl"><img src="http://localhost:8896/img/banner06.jpg"></div>
         <ul class="goods_list fl">
             <li th:each="goods:${goods1}">
                 <input style="top: 1px;display: none" type="checkbox" name="che" th:value="${goods.gid}" >
@@ -113,7 +113,7 @@
     </div>
 
     <div class="goods_con clearfix">
-        <div class="goods_banner fl"><img src="http://localhost:8894/goods-consumer/templates/img/banner02.jpg"></div>
+        <div class="goods_banner fl"><img src="http://localhost:8896/img/banner02.jpg"></div>
         <ul class="goods_list fl">
             <li th:each="goods:${goods2}">
                 <input style="top: 1px;display: none" type="checkbox" name="che" th:value="${goods.gid}" >
@@ -138,7 +138,7 @@
     </div>
 
         <div class="goods_con clearfix">
-            <div class="goods_banner fl"><img src="http://localhost:8894/goods-consumer/templates/img/banner01.jpg"></div>
+            <div class="goods_banner fl"><img src="http://localhost:8896/img/banner01.jpg"></div>
             <ul class="goods_list fl">
                 <li th:each="goods:${goods3}">
                     <input style="top: 1px;display: none" type="checkbox" name="che" th:value="${goods.gid}" >
@@ -162,7 +162,7 @@
         </div>
     </div>
     <div class="goods_con clearfix">
-        <div class="goods_banner fl"><img src="http://localhost:8894/goods-consumer/templates/img/banner05.jpg"></div>
+        <div class="goods_banner fl"><img src="http://localhost:8896/img/banner05.jpg"></div>
         <ul class="goods_list fl">
             <li th:each="goods:${goods4}">
                 <input style="top: 1px;display: none" type="checkbox" name="che" th:value="${goods.gid}" >
@@ -188,7 +188,7 @@
     <p>CopyRight © 2019 北京美多商城有限公司 All Rights Reserved</p>
     <p>电话：010-****888    京ICP备*******8号</p>
 </div>
-<script type="text/javascript" src="http://localhost:8894/goods-consumer/templates/js/slideshow.js"></script>
+<script type="text/javascript" src="http://localhost:8896/js/slideshow.js"></script>
 <script type="text/javascript">
     BCSlideshow('focuspic');
     var oFruit = document.getElementById('fruit_more');
